@@ -62,9 +62,13 @@ public class DNSserver {
                     DNSMessage googleResponse = DNSMessage.decodeMessage(responsePacket.getData());
                     //System.out.println("DNSMessage googleResponse = DNSMessage.decodeMessage(responsePacket.getData());\n");
                     answer = googleResponse.getAnswers();
-                    cache.insert(question.get(0), answer.get(0));
-                    //System.out.println("cache.insert(question.get(0), answer.get(0));\n: " + question.get(0));
-
+                    if(!answer.isEmpty()) {
+                        cache.insert(question.get(0), answer.get(0));
+                        //System.out.println("cache.insert(question.get(0), answer.get(0));\n: " + question.get(0));
+                    }
+                    if(answer.isEmpty()){
+                        System.out.println("Error: faulty domain-name");
+                    }
                 }
 
                 // Build response message

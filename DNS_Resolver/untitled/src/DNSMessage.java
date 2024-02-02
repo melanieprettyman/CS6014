@@ -124,12 +124,13 @@ public class DNSMessage {
         // Create a new DNSMessage for the response
         DNSMessage response = new DNSMessage();
 
+        response.answers = answers;
+
         // Build the header for the response
-        response.header = DNSHeader.buildHeaderForResponse(request);
+        response.header = DNSHeader.buildHeaderForResponse(request, response);
 
         // Set the number of questions, answers, authorities, and additional records
         response.questions = request.getQuestions();
-        response.answers = answers;
         response.authorityRecords = request.getAuthorityRecords();
         response.additionalRecords = request.getAdditionalRecords();
 
@@ -226,6 +227,10 @@ public class DNSMessage {
 
     public byte[] getMessageBytes() {
         return messageBytes;
+    }
+
+    public int getAnswerCount(){
+        return answers.size();
     }
 
 

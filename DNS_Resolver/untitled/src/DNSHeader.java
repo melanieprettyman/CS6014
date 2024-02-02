@@ -133,7 +133,7 @@ public class DNSHeader {
      * @param request The DNSMessage object representing the request.
      * @return The DNSHeader object for the response.
      */
-    public static DNSHeader buildHeaderForResponse(DNSMessage request) {
+    public static DNSHeader buildHeaderForResponse(DNSMessage request, DNSMessage response) {
         DNSHeader requestHeader = request.getHeader();
 
         // Create a new header using the request's header as a template
@@ -147,8 +147,11 @@ public class DNSHeader {
         // Set QR flag to indicate a response
         responseHeader.qr = 1;
 
-        // Set ANCOUNT to 1
-        responseHeader.anCount = 1;
+        // Set ANCOUNT to 1 if answer is good (otherwise so not send an
+        if (response.getAnswerCount() > 0) {
+
+            responseHeader.anCount = 1;
+        }
 
         return responseHeader;
     }
