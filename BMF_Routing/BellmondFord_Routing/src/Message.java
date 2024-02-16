@@ -14,7 +14,7 @@ public class Message {
     }
 
     public void dump() {
-        System.out.println("sender: " + sender + " receiver " + receiver);
+        //System.out.println("sender: " + sender + " receiver " + receiver);
         for(Router r : distances.keySet()){
             System.out.println("\t" + r + "\t" + distances.get(r));
         }

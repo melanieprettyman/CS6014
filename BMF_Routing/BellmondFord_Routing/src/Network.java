@@ -40,10 +40,10 @@ public class Network {
     public static void runBellmanFord() throws InterruptedException {
 
         while(!messageQueue.isEmpty()){
-            System.out.println("processing message");
+            //System.out.println("processing message");
             ++messageCount;
             Message message = messageQueue.take();
-            message.dump();
+            //message.dump();
             message.receiver.onDistanceMessage(message);
         }
     }

@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         //1. Initializes the network structure
         //Network.makeSimpleNetwork(); //use this for testing/debugging
-        Network.makeProbablisticNetwork(12); //use this for the plotting part
+        Network.makeProbablisticNetwork(25); //use this for the plotting part
 
         //2. Prints the current network configuration
         Network.dump();
