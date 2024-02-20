@@ -5,7 +5,7 @@
 #include "RC4.h"
 
 //RC4 constructor
-void RC4::keyScheduler(const std::string keyString) : S(256), i(0), j(0) {
+RC4::RC4(const std::string keyString) : S(256), i(0), j(0) {
     std::vector<uint8_t> key = std::vector<uint8_t> (keyString.begin(), keyString.end());
 
     //making state

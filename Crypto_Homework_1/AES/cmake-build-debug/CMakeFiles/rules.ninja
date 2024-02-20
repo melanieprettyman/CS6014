@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/AES -B/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/AES/cmake-build-debug
+  command = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/Crypto_Homework_1/AES -B/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/Crypto_Homework_1/AES/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

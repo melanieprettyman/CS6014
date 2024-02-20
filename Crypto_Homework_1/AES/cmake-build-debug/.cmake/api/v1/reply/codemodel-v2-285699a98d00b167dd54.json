@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/AES/cmake-build-debug",
-		"source" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/AES"
+		"build" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/Crypto_Homework_1/AES/cmake-build-debug",
+		"source" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/Crypto_Homework_1/AES"
 	},
 	"version" : 
 	{

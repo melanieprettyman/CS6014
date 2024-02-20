@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/AES/cmake-build-debug"
+			"value" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/Crypto_Homework_1/AES/cmake-build-debug"
 		},
 		{
 			"name" : "AES_IS_TOP_LEVEL",
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/AES"
+			"value" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/Crypto_Homework_1/AES"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/AES/cmake-build-debug"
+			"value" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/Crypto_Homework_1/AES/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/AES/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/Crypto_Homework_1/AES/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/AES"
+			"value" : "/Users/melanieprettyman/Desktop/MSD/Spring2024/CS6014/CS6014/Crypto_Homework_1/AES"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",

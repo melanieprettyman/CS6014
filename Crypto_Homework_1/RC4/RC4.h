@@ -15,7 +15,7 @@ private:
     void swap(int &a, int &b);
 
 public:
-    void keyScheduler(const std::string keyString);
+    RC4(const std::string keyString);
     uint8_t getNextByte();
 };
 

@@ -7,9 +7,7 @@ using Key = std::string;
 
 Stream encryptDecryptRC4(const Stream & input, const Key & key) {
     //Generate KSA with rc4
-
-    RC4 rc4;
-    rc4.keyScheduler(key); 
+    RC4 rc4(key);
 
     Stream output(input.size());
 
@@ -21,11 +19,12 @@ Stream encryptDecryptRC4(const Stream & input, const Key & key) {
     return output; //return plain or cipher text
 }
 void demonstrateRC4Works() {
+    std::cout << "------------------------------------------------------------------" << std::endl;
     // Example message and key
-    std::string messageStr = "Hello, World!";
-    std::cout << "Message before encryption: " << messageStr;
+    std::string messageStr = "park that big mac truck right in this little garage";
+    std::cout << "Message before encryption: " << messageStr << std::endl;
     Stream message(messageStr.begin(), messageStr.end());
-    Key key = "password";
+    Key key = "cardiB";
 
     //encrypt the message
     Stream encryptedMessage = encryptDecryptRC4(message, key);
@@ -41,9 +40,11 @@ void demonstrateRC4Works() {
 
 }
 void demonstrateDecryptionWithDifferentKeys() {
-    const Stream originalMessage = {'H', 'e', 'l', 'l', 'o'};
-    const Key keyForEncryption = "password";
-    const Key keyForDecryption = "differentPassword";
+    std::cout << "------------------------------------------------------------------" << std::endl;
+
+    const Stream originalMessage = {'W', 'A', 'P'};
+    const Key keyForEncryption = "cardiB";
+    const Key keyForDecryption = "fardiC";
 
     Stream encryptedMessage = encryptDecryptRC4(originalMessage, keyForEncryption);
     Stream decryptedWithDifferentKey = encryptDecryptRC4(encryptedMessage, keyForDecryption);
@@ -56,6 +57,8 @@ void demonstrateDecryptionWithDifferentKeys() {
 }
 
 void demonstrateKeystreamReuseVulnerability() {
+    std::cout << "------------------------------------------------------------------" << std::endl;
+
     const Stream message1 = {'A', 'B', 'C'};
     const Stream message2 = {'X', 'Y', 'Z'};
     Key key = "password";
@@ -72,8 +75,10 @@ void demonstrateKeystreamReuseVulnerability() {
     std::cout << std::endl;
 }
 void performBitFlippingAttack() {
+    std::cout << "------------------------------------------------------------------" << std::endl;
+
     std::string originalMessage = "Your salary is $1000";
-    Key key = "password";
+    Key key = "grandTheftAuto";
     Stream encryptedMessage = encryptDecryptRC4(Stream(originalMessage.begin(), originalMessage.end()), key);
 
     //Attacker knows the position of "1000" in the message and want to change it to "9999"
