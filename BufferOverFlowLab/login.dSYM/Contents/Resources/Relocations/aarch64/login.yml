@@ -1,0 +1,12 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     login
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _check_secret, symObjAddr: 0x0, symBinAddr: 0x100003C4C, symSize: 0xB4 }
+  - { offsetInCU: 0x4D, offset: 0x4D, size: 0x8, addend: 0x0, symName: _sh, symObjAddr: 0x2F0, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x5B, offset: 0x5B, size: 0x8, addend: 0x0, symName: _check_secret, symObjAddr: 0x0, symBinAddr: 0x100003C4C, symSize: 0xB4 }
+  - { offsetInCU: 0xAD, offset: 0xAD, size: 0x8, addend: 0x0, symName: _success, symObjAddr: 0xB4, symBinAddr: 0x100003D00, symSize: 0x90 }
+  - { offsetInCU: 0xD1, offset: 0xD1, size: 0x8, addend: 0x0, symName: _failure, symObjAddr: 0x144, symBinAddr: 0x100003D90, symSize: 0x1C }
+  - { offsetInCU: 0xE6, offset: 0xE6, size: 0x8, addend: 0x0, symName: _login, symObjAddr: 0x160, symBinAddr: 0x100003DAC, symSize: 0xA4 }
+  - { offsetInCU: 0x12A, offset: 0x12A, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x204, symBinAddr: 0x100003E50, symSize: 0x58 }
+...
